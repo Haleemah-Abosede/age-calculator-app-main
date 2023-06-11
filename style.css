@@ -29,9 +29,15 @@ main form{
   
 }
 
+main form .x .small{
+  font-size: 10px;
+  color: hsl(0, 100%, 67%);
+  font-style: oblique;
+}
+
 main form .x{
     display: flex;
-    gap: .3em;
+    gap: .2em;
     flex-direction: column;
     color:hsl(0, 1%, 44%) ;
 }
@@ -48,6 +54,10 @@ main form .x input{
     border-radius: .5em;
     width: 100px;
     outline: none;
+}
+
+main form .x input:focus{
+  border: 1px solid  hsl(259, 100%, 65%);
 }
 ::placeholder{
     font-size: 18px;
@@ -121,4 +131,66 @@ footer {
 footer a {
          color: hsl(228, 45%, 44%); 
  }
+
+
+ @media(max-width:425px){
+   main form{
+    margin-right: 0;
+    margin-bottom: 3em;
+    gap: .5em;
+  
+   }
+    section.division .image{
+    right: 45%;
+  }
+  main{
+    overflow: hidden;
+    width: 90%;
+  
+ }
+
+  section.division .image img{
+    width: 30px;
+   
+  }
+
+   section.division .image img:hover{
+    width: 40px;
+  }
+
+ }
+ 
+
+
+@media(max-width:375px){
+ main form .x input{
+  width: 90px;
+ }
+
+ main{
+   padding: 1.5em;
+  
+ }
+
+  section.division .image{
+    right: 43%;
+  }
+}
+
+@media(max-width:320px){
+ main form .x input{
+  width: 80px;
+ }
+
+ main{
+   padding: 1.2em;
+  
+ }
+
+  section.division .image{
+    right: 40%;
+  }
+}
+
+
  
