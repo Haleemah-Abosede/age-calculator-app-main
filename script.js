@@ -1,5 +1,4 @@
 
-// check for invalid inputs and empty inputs.
 // accomodation for leap years and for months with 30 days
 
 const d0 = document.getElementById("day");
